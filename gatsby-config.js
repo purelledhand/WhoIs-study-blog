@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'WHOIS STUDY REPOSITORY',
     description: '우리가 공부한 것들을 기록합니다.',
-    siteUrl: 'https://gatsby-casper.netlify.com', // full path to blog - no ending slash
+    siteUrl: 'https://epic-raman-4d175d.netlify.com', // full path to blog - no ending slash
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
