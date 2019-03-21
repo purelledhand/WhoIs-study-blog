@@ -10,8 +10,8 @@ export const PostFullContent = styled.section`
   margin: 0 auto;
   padding: 70px 100px 0;
   min-height: 230px;
-  font-family: Georgia, serif;
-  font-size: 2.2rem;
+  font-family: 'Spoqa Han Sans', serif;
+  font-size: 16px;
   line-height: 1.6em;
   background: #fff;
 
@@ -78,12 +78,11 @@ export const PostFullContent = styled.section`
   a {
     color: #000;
     word-break: break-word;
-    box-shadow: ${colors.blue} 0 -1px 0 inset;
+    
   }
 
   a:hover {
-    color: ${colors.blue};
-    text-decoration: none;
+    text-decoration: base-line;
   }
 
   strong,
@@ -225,8 +224,7 @@ export const PostFullContent = styled.section`
   h5,
   h6 {
     color: ${setLightness('0.05', colors.darkgrey)};
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-      'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Spoqa Han Sans', 'Helvetica Neue', sans-serif;
   }
 
   h1 {
@@ -253,7 +251,7 @@ export const PostFullContent = styled.section`
 
   h3 {
     margin: 0.5em 0 0.2em 0;
-    font-size: 2.8rem;
+    font-size: 24px;
     font-weight: 700;
   }
   @media (max-width: 500px) {
@@ -263,9 +261,9 @@ export const PostFullContent = styled.section`
   }
 
   h4 {
-    margin: 0.5em 0 0.2em 0;
-    font-size: 2.8rem;
-    font-weight: 700;
+    margin: 0.5em 0 20px 0;
+    font-size: 22px;
+    font-weight: bold;
   }
   @media (max-width: 500px) {
     h4 {

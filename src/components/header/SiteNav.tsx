@@ -127,6 +127,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNaveState> {
     super(props);
     this.state = { isOpen: false };
   }
+
   openModal = () => {
     if (this.subscribe.current) {
       this.subscribe.current.open();
@@ -138,17 +139,29 @@ class SiteNav extends React.Component<SiteNavProps, SiteNaveState> {
     return (
       <nav css={[isHome && HomeNavRaise, SiteNavStyles]}>
         <SiteNavLeft>
-          {!isHome && <SiteNavLogo />}
+          {!isHome && <SiteNavLogo/>}
           <ul css={NavStyles} role="menu">
             {/* TODO: mark current nav item - add class nav-current */}
             <li role="menuitem">
               <Link to="/">Home</Link>
             </li>
             <li role="menuitem">
-              <Link to="/about">About</Link>
+              <Link to="/tags/front-end/">Front End</Link>
             </li>
             <li role="menuitem">
-              <Link to="/tags/getting-started/">Getting Started</Link>
+              <Link to="/tags/back-end/">Back End</Link>
+            </li>
+            <li role="menuitem">
+              <Link to="/tags/web-hacking/">WebHacking</Link>
+            </li>
+            <li role="menuitem">
+              <Link to="/tags/pwn/">Pwn</Link>
+            </li>
+            <li role="menuitem">
+              <Link to="/tags/reversing/">Reversing</Link>
+            </li>
+            <li role="menuitem">
+              <Link to="/tags/news-tip/">News/Tip</Link>
             </li>
           </ul>
         </SiteNavLeft>
@@ -162,7 +175,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNaveState> {
                 title="Facebook"
                 rel="noopener noreferrer"
               >
-                <Facebook />
+                <Facebook/>
               </a>
             )}
             {config.twitter && (
@@ -173,14 +186,14 @@ class SiteNav extends React.Component<SiteNavProps, SiteNaveState> {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Twitter />
+                <Twitter/>
               </a>
             )}
           </SocialLinks>
           {config.showSubscribe && (
             <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>
           )}
-          {config.showSubscribe && <SubscribeModal ref={this.subscribe} />}
+          {config.showSubscribe && <SubscribeModal ref={this.subscribe}/>}
         </SiteNavRight>
       </nav>
     );

@@ -49,16 +49,16 @@ const ReadNextCardHeader = styled.header`
 
 const ReadNextCardHeaderSitetitle = styled.small`
   display: block;
-  font-size: 1.3rem;
+  font-size: 16px;
   line-height: 1.3em;
   opacity: 0.8;
 `;
 
 const ReadNextCardHeaderTitle = styled.h3`
-  margin: 0;
+  margin: 10px 0 0 0;
   padding: 0 20px;
   color: #fff;
-  font-size: 3rem;
+  font-size: 24px;
   line-height: 1.2em;
   letter-spacing: 1px;
 
@@ -190,7 +190,7 @@ const ReadNextCard: React.FunctionComponent<ReadNextProps> = props => {
         <ReadNextCardStyles coverImage={header.childImageSharp.fluid.src}>
           <ReadNextCardHeader>
             <ReadNextCardHeaderSitetitle>
-              &mdash; {config.title} &mdash;
+              같은 태그의 다른 글
             </ReadNextCardHeaderSitetitle>
             <ReadNextCardHeaderTitle>
               <Link to={`/tags/${_.kebabCase(props.tags[0])}/`}>{props.tags[0]}</Link>

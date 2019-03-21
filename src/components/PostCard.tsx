@@ -13,6 +13,7 @@ const PostCardStyles = css`
   flex: 1 1 300px;
   display: flex;
   flex-direction: column;
+  font-family: 'Spoqa Han Sans', 'Helvetica Neue', sans-serif;
   overflow: hidden;
   margin: 0 20px 40px;
   min-height: 300px;
@@ -78,7 +79,7 @@ const PostCardTitle = styled.h2`
 `;
 
 const PostCardExcerpt = styled.section`
-  font-family: Georgia, serif;
+  font-family: 'Spoqa Han Sans', 'Helvetica Neue', sans-serif;
 `;
 
 const PostCardMeta = styled.footer`

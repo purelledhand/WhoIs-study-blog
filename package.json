@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-casper",
-  "description": "Casper for gatsby",
+  "name": "whois-study-blog",
+  "description": "study blog for whois group",
   "version": "0.0.0",
   "private": true,
-  "author": "Scott Cooper <scttcper@gmail.com>",
+  "author": "Choi Sohye <purelledhand@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -54,7 +54,8 @@
     "react-dom": "16.8.4",
     "react-emotion": "10.0.0",
     "react-helmet": "5.2.0",
-    "rehype-react": "3.1.0"
+    "rehype-react": "3.1.0",
+    "tsc-watch": "^2.1.2"
   },
   "devDependencies": {
     "@types/classnames": "2.2.7",

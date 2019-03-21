@@ -269,8 +269,7 @@ const GlobalStyles = css`
   body {
     overflow-x: hidden;
     color: ${darken('0.25', colors.midgrey)};
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-      'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Spoqa Han Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
     line-height: 1.6em;
     font-weight: 400;
@@ -426,8 +425,8 @@ const GlobalStyles = css`
 
   h1 {
     margin: 0 0 0.5em 0;
-    font-size: 5rem;
-    font-weight: 700;
+    font-size: 36px;
+    font-weight: 300;
   }
   @media (max-width: 500px) {
     h1 {
@@ -475,7 +474,7 @@ const GlobalStyles = css`
   }
 
   body {
-    background: #f4f8fb;
+    background: #f6f6f6;
   }
 `;
 

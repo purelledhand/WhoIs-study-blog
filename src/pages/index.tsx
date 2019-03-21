@@ -87,26 +87,31 @@ export interface IndexProps {
 const IndexPage: React.FunctionComponent<IndexProps> = props => {
   const width = props.data.header.childImageSharp.fluid.sizes.split(', ')[1].split('px')[0];
   const height = String(Number(width) / props.data.header.childImageSharp.fluid.aspectRatio);
+  const colors = [
+    '#232526',
+    '#414345',
+    '#fad0c4',
+  ];
   return (
     <IndexLayout css={HomePosts}>
       <Helmet>
-        <html lang={config.lang} />
+        <html lang={config.lang}/>
         <title>{config.title}</title>
-        <meta name="description" content={config.description} />
-        <meta property="og:site_name" content={config.title} />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={config.title} />
-        <meta property="og:description" content={config.description} />
-        <meta property="og:url" content={config.siteUrl} />
+        <meta name="description" content={config.description}/>
+        <meta property="og:site_name" content={config.title}/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content={config.title}/>
+        <meta property="og:description" content={config.description}/>
+        <meta property="og:url" content={config.siteUrl}/>
         <meta
           property="og:image"
           content={`${config.siteUrl}${props.data.header.childImageSharp.fluid.src}`}
         />
-        {config.facebook && <meta property="article:publisher" content={config.facebook} />}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={config.title} />
-        <meta name="twitter:description" content={config.description} />
-        <meta name="twitter:url" content={config.siteUrl} />
+        {config.facebook && <meta property="article:publisher" content={config.facebook}/>}
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content={config.title}/>
+        <meta name="twitter:description" content={config.description}/>
+        <meta name="twitter:url" content={config.siteUrl}/>
         <meta
           name="twitter:image"
           content={`${config.siteUrl}${props.data.header.childImageSharp.fluid.src}`}
@@ -117,32 +122,23 @@ const IndexPage: React.FunctionComponent<IndexProps> = props => {
             content={`@${config.twitter.split('https://twitter.com/')[1]}`}
           />
         )}
-        <meta property="og:image:width" content={width} />
-        <meta property="og:image:height" content={height} />
+        <meta property="og:image:width" content={width}/>
+        <meta property="og:image:height" content={height}/>
       </Helmet>
       <Wrapper>
         <header
           css={[outer, SiteHeader]}
           style={{
             backgroundImage: `url('${props.data.header.childImageSharp.fluid.src}')`,
+            //backgroundImage: `linear-gradient(45deg, ${colors[0]} 0%, ${colors[1]} 100%)`,
           }}
         >
           <div css={inner}>
             <SiteHeaderContent>
-              <SiteTitle>
-                {props.data.logo ? (
-                  <img
-                    style={{ maxHeight: '45px' }}
-                    src={props.data.logo.childImageSharp.fixed.src}
-                    alt={config.title}
-                  />
-                ) : (
-                  config.title
-                )}
-              </SiteTitle>
-              <SiteDescription>{config.description}</SiteDescription>
+              <p style={{ fontSize: '36px', marginBottom: '10px', fontWeight: 'bold' }}>WHOIS STUDY REPOSITORY</p>
+              <SiteDescription style={{ fontWeight: 'normal' }}>{config.description}</SiteDescription>
             </SiteHeaderContent>
-            <SiteNav isHome={true} />
+            <SiteNav isHome={true}/>
           </div>
         </header>
         <main id="site-main" css={[SiteMain, outer]}>
@@ -153,7 +149,7 @@ const IndexPage: React.FunctionComponent<IndexProps> = props => {
                 return (
                   (post.node.frontmatter.draft !== true ||
                     process.env.NODE_ENV !== 'production') && (
-                    <PostCard key={post.node.fields.slug} post={post.node} />
+                    <PostCard key={post.node.fields.slug} post={post.node}/>
                   )
                 );
               })}
@@ -162,7 +158,7 @@ const IndexPage: React.FunctionComponent<IndexProps> = props => {
         </main>
         {props.children}
 
-        <Footer />
+        <Footer/>
       </Wrapper>
     </IndexLayout>
   );
@@ -172,7 +168,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query {
-    logo: file(relativePath: { eq: "img/ghost-logo.png" }) {
+    logo: file(relativePath: { eq: "img/whois-logo.png" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.

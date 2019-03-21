@@ -1,10 +1,21 @@
 - id: Ghost
   avatar: avatars/ghost.png
-  bio: The professional publishing platform
-  twitter: TryGhost
-  facebook: ghost
-  website: https://ghost.org/
-  location: On a plane
+  bio: 아주대학교 정보보안 소학회 Whois
+  facebook: ajou-whois
+  website: https://ajou-whois.org/
+  location: Whois, Ajou Univ.
+- id: Whois
+  avatar: avatars/ghost.png
+  bio: 아주대학교 정보보안 소학회 Whois
+  facebook: ajou-whois
+  website: https://ajou-whois.org/
+  location: Whois, Ajou Univ.
+- id: Whois FE group
+  avatar: avatars/whoisjs.png
+  bio: Whois Front End 스터디 그룹
+  facebook: ajou-whois
+  website: https://ajou-whois.org/
+  location: Whois, Ajou Univ.
 - id: Another Author
   avatar: avatars/ghost.png
   bio: This is another test author with a profile background image
