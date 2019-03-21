@@ -12,7 +12,7 @@ export const PostFullContent = styled.section`
   margin: 0 auto;
   padding: 70px 100px 0;
   min-height: 230px;
-  font-family: 'Spoqa Han Sans', serif;
+  font-family: 'Spoqa Han Sans', --apple-system, serif;
   font-size: 16px;
   line-height: 1.6em;
   background: #fff;
