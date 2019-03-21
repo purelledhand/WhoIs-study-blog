@@ -6,6 +6,8 @@ import rehypeReact from 'rehype-react';
 import { colors } from '../styles/colors';
 
 export const PostFullContent = styled.section`
+  @import url(https://cdnjs.cloudflare.com/ajax/libs/spoqa-han-sans/2.1.2/css/SpoqaHanSans-kr.min.css);
+  
   position: relative;
   margin: 0 auto;
   padding: 70px 100px 0;
