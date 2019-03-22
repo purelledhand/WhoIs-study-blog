@@ -21,6 +21,7 @@ import IndexLayout from '../layouts';
 import { colors } from '../styles/colors';
 import { inner, outer, SiteHeader, SiteMain } from '../styles/shared';
 import config from '../website-config';
+import { DiscussionEmbed } from 'disqus-react';
 
 const PostTemplate = css`
   .site-main {
@@ -215,6 +216,12 @@ const PageTemplate: React.FunctionComponent<PageTemplateProps> = props => {
     height = String(Number(width) / post.frontmatter.image.childImageSharp.fluid.aspectRatio);
   }
 
+  const disqusShortname = 'purelledhand';
+  const disqusConfig = {
+    identifier: post.frontmatter.author.id,
+    title: post.frontmatter.title,
+  };
+
   return (
     <IndexLayout className="post-template">
       <Helmet>
@@ -278,7 +285,7 @@ const PageTemplate: React.FunctionComponent<PageTemplateProps> = props => {
                     <>
                       <DateDivider>/</DateDivider>
                       <Link to={`/tags/${_.kebabCase(post.frontmatter.tags[0])}/`}
-                            style={{color:'#738a94'}}>
+                            style={{ color: '#738a94' }}>
                         {post.frontmatter.tags[0]}
                       </Link>
                     </>
@@ -296,8 +303,12 @@ const PageTemplate: React.FunctionComponent<PageTemplateProps> = props => {
                   <AuthorCard author={post.frontmatter.author}/>
                   <PostFullFooterRight authorId={post.frontmatter.author.id}/>
                 </PostFullFooter>
+                <div style={{ padding: '10px 0 30px 0', width: '840px', margin: '0 auto' }}>
+                  <DiscussionEmbed shortname={disqusShortname} config={disqusConfig}/>
+                </div>
               </div>
             </article>
+
           </div>
         </main>
 
@@ -312,6 +323,8 @@ const PageTemplate: React.FunctionComponent<PageTemplateProps> = props => {
               {props.pageContext.prev && <PostCard post={props.pageContext.prev}/>}
               {props.pageContext.next && <PostCard post={props.pageContext.next}/>}
             </ReadNextFeed>
+
+
           </div>
         </aside>
         <Footer/>
