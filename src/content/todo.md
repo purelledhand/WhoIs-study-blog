@@ -7,6 +7,8 @@ date: 2019-03-21
 tags: ["Front End"]
 ---
 > 후이즈 JS 스터디 그룹에서는 아래 컨셉들을 학습하고 정리하여 포스팅합니다.
+>
+> 🚀 inspired, and based by https://github.com/leonardomso/33-js-concepts
 
 1. **Call Stack**
 2. **Primitive Types**
