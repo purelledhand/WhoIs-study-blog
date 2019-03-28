@@ -78,7 +78,7 @@ export const PostFullContent = styled.section`
   }
 
   a {
-    color: #000;
+    color: #2171DC;
     word-break: break-word;
     
   }
@@ -276,13 +276,9 @@ export const PostFullContent = styled.section`
   h5 {
     display: block;
     margin: 0.5em 0;
-    padding: 1em 0 1.5em;
     border: 0;
-    color: ${colors.blue};
-    font-family: Georgia, serif;
-    font-size: 3.2rem;
+    font-size: 1.1em;
     line-height: 1.35em;
-    text-align: center;
   }
   @media (min-width: 1180px) {
     h5 {
