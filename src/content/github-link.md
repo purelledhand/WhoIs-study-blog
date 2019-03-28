@@ -3,7 +3,7 @@ layout: post
 title: JS 스터디 코드 관리 가이드라인
 image: img/callum-shaw-555357-unsplash.jpg
 author: Whois FE group
-date: 2019-03-21
+date: "2019-03-21T15:00:00.000Z"
 tags: ["News/Tip", "Front End"]
 ---
 

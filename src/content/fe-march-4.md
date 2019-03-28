@@ -4,8 +4,7 @@ title: "3월 넷째주 JS스터디 보고"
 author: Whois FE group
 tags: ["News/Tip"]
 image: img/fe-march-4/cover.jpeg
-date: "2019-03-28"
-draft: false
+date: "2019-03-28T19:00:00.000Z"
 ---
 
 > Whois Javascript 스터디 보고 (2019년 3월 18일, 2019년  3월 25일), 2회 진행

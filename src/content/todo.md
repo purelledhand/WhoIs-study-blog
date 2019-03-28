@@ -3,7 +3,7 @@ layout: post
 title: 33 JS Concepts
 image: img/33-concepts.png
 author: Whois FE group
-date: 2019-03-21
+date: "2019-03-21T16:00:00.000Z"
 tags: ["Front End"]
 ---
 > 후이즈 JS 스터디 그룹에서는 아래 컨셉들을 학습하고 정리하여 포스팅합니다.
