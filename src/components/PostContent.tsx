@@ -377,6 +377,11 @@ export const PostFullContent = styled.section`
       display: none;
     }
   }
+  
+  .language-text {
+    color: #000;
+    background-color: #EEE;
+  }
 
   /* Start Syntax Highlighting */
   /* Taken from overreacted https://github.com/gaearon/overreacted.io/blob/942b41555f5e5ccbb5f93f6c26142cd90b314236/src/utils/global.css#L68 */
