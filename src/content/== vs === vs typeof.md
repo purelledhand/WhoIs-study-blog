@@ -1,4 +1,12 @@
-# == vs === vs typeof
+---
+layout: post
+title: 5. == vs === vs typeof
+image: img/33-concepts.png
+author: Whois FE group
+date: "2019-04-29T19:14:00.000Z"
+tags: ["Front End"]
+---
+## == vs === vs typeof
 
 typeof는 바로 다음에 오는 값의 자료형을 문자열 형태로 반환해주는 연산자이다.
 
