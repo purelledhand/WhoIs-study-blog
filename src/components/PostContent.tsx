@@ -379,8 +379,8 @@ export const PostFullContent = styled.section`
   }
   
   .language-text {
-    color: #000;
-    background-color: #EEE;
+    color: #000 !important;
+    background-color: #EEE !important;
   }
 
   /* Start Syntax Highlighting */
